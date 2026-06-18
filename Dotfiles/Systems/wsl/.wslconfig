@@ -1,0 +1,9 @@
+[wsl2]
+memory=16GB
+processors=8
+# 开启镜像网络模式，让 WSL 与 Windows 共享同一个 IP 和网络环境
+networkingMode=mirrored
+
+[experimental]
+# 自动同步 Windows 的系统代理设置给 WSL
+autoProxy=true

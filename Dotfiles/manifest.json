@@ -1,0 +1,149 @@
+{
+  "version": "1.0",
+  "directories": {
+    "windows": [
+      { "path": "D:\\Cache\\Pip", "desc": "Python pip 缓存" },
+      { "path": "D:\\Cache\\Npm", "desc": "Node.js npm 缓存" },
+      { "path": "D:\\Cache\\Yarn", "desc": "Yarn 缓存" },
+      { "path": "D:\\Cache\\Cargo", "desc": "Rust Cargo 缓存" },
+      { "path": "D:\\Cache\\Rustup", "desc": "Rustup 工具链" },
+      { "path": "D:\\Cache\\Go", "desc": "Go 工作区" },
+      { "path": "D:\\Cache\\Gradle", "desc": "Gradle 缓存" },
+      { "path": "D:\\Cache\\XDG", "desc": "XDG 缓存" },
+      { "path": "D:\\Cache\\JetBrains", "desc": "JetBrains 缓存" },
+      { "path": "D:\\Data\\AI\\Ollama", "desc": "Ollama 模型" },
+      { "path": "D:\\Data\\AI\\HuggingFace", "desc": "HuggingFace 模型" },
+      { "path": "D:\\Data\\AI\\Train", "desc": "AI 训练输出" },
+      { "path": "D:\\Data\\XDG", "desc": "XDG 用户数据" },
+      { "path": "D:\\Data\\Docker", "desc": "Docker 配置" },
+      { "path": "D:\\Data\\WSL", "desc": "WSL 虚拟磁盘" },
+      { "path": "D:\\Data\\Npm_Global", "desc": "NPM 全局模块" },
+      { "path": "D:\\Data\\Maven", "desc": "Maven 本地仓库" },
+      { "path": "D:\\Data\\VSCode\\AppData", "desc": "VS Code 用户数据" },
+      { "path": "D:\\Data\\VSCode\\Extensions", "desc": "VS Code 扩展" },
+      { "path": "D:\\Workspace\\ZevSol", "desc": "主干项目" },
+      { "path": "D:\\Workspace\\Lab", "desc": "实验沙箱" },
+      { "path": "D:\\Media\\Brand", "desc": "品牌资产" },
+      { "path": "D:\\Media\\Photography", "desc": "摄影图库" },
+      { "path": "D:\\Media\\Projects", "desc": "多媒体工程" },
+      { "path": "E:\\Downloads", "desc": "下载缓冲" },
+      { "path": "E:\\Portable", "desc": "绿色软件" },
+      { "path": "E:\\Software\\Installers", "desc": "离线安装包" },
+      { "path": "E:\\Software\\OS_Images", "desc": "系统镜像" },
+      { "path": "E:\\Vault\\Backups", "desc": "备份归档" },
+      { "path": "E:\\Vault\\Photos", "desc": "私人照片" }
+    ],
+    "wsl": [
+      { "path": "/mnt/d/Cache/Pip", "desc": "Python pip 缓存" },
+      { "path": "/mnt/d/Cache/Npm", "desc": "Node.js npm 缓存" },
+      { "path": "/mnt/d/Cache/Yarn", "desc": "Yarn 缓存" },
+      { "path": "/mnt/d/Cache/Cargo", "desc": "Rust Cargo 缓存" },
+      { "path": "/mnt/d/Cache/Rustup", "desc": "Rustup 工具链" },
+      { "path": "/mnt/d/Cache/Go", "desc": "Go 工作区" },
+      { "path": "/mnt/d/Cache/XDG", "desc": "XDG 缓存" },
+      { "path": "/mnt/d/Data/AI/Ollama", "desc": "Ollama 模型" },
+      { "path": "/mnt/d/Data/AI/HuggingFace", "desc": "HuggingFace 模型" },
+      { "path": "/mnt/d/Data/XDG", "desc": "XDG 用户数据" },
+      { "path": "/mnt/d/Data/WSL", "desc": "WSL 虚拟磁盘" }
+    ]
+  },
+  "env": {
+    "windows": {
+      "SCOOP": { "value": "D:\\Scoop", "desc": "Scoop 包管理器根目录" },
+      "PIP_CACHE_DIR": { "value": "D:\\Cache\\Pip", "desc": "Python pip 缓存路径" },
+      "NPM_CONFIG_CACHE": { "value": "D:\\Cache\\Npm", "desc": "Node.js npm 缓存路径" },
+      "YARN_CACHE_FOLDER": { "value": "D:\\Cache\\Yarn", "desc": "Yarn 缓存路径" },
+      "CARGO_HOME": { "value": "D:\\Cache\\Cargo", "desc": "Rust Cargo 缓存路径" },
+      "RUSTUP_HOME": { "value": "D:\\Cache\\Rustup", "desc": "Rustup 工具链路径" },
+      "GOPATH": { "value": "D:\\Cache\\Go", "desc": "Go 工作区路径" },
+      "GRADLE_USER_HOME": { "value": "D:\\Cache\\Gradle", "desc": "Gradle 缓存路径" },
+      "XDG_CACHE_HOME": { "value": "D:\\Cache\\XDG", "desc": "XDG 缓存路径" },
+      "OLLAMA_MODELS": { "value": "D:\\Data\\AI\\Ollama", "desc": "Ollama 模型路径" },
+      "HF_HOME": { "value": "D:\\Data\\AI\\HuggingFace", "desc": "HuggingFace 模型路径" },
+      "XDG_DATA_HOME": { "value": "D:\\Data\\XDG", "desc": "XDG 用户数据路径" },
+      "DOCKER_CONFIG": { "value": "D:\\Data\\Docker", "desc": "Docker 配置路径" },
+      "VSCODE_APPDATA": { "value": "D:\\Data\\VSCode\\AppData", "desc": "VS Code 用户数据路径" },
+      "VSCODE_EXTENSIONS": { "value": "D:\\Data\\VSCode\\Extensions", "desc": "VS Code 扩展路径" },
+      "GIT_CONFIG_GLOBAL": { "value": "D:\\Dotfiles\\Systems\\windows\\git\\.gitconfig", "desc": "Git 全局配置" },
+      "NPM_CONFIG_USERCONFIG": { "value": "D:\\Dotfiles\\Systems\\windows\\npm\\.npmrc", "desc": "NPM 用户配置" },
+      "PIP_CONFIG_FILE": { "value": "D:\\Dotfiles\\Systems\\windows\\pip\\pip.ini", "desc": "Pip 配置文件" },
+      "STARSHIP_CONFIG": { "value": "D:\\Dotfiles\\Systems\\windows\\starship\\starship.toml", "desc": "Starship 配置" },
+      "GH_CONFIG_DIR": { "value": "D:\\Dotfiles\\Systems\\windows\\gh\\config.yml", "desc": "GitHub CLI 配置" },
+      "XDG_CONFIG_HOME": { "value": "D:\\Dotfiles\\Systems\\windows", "desc": "XDG 配置路径" }
+    },
+    "wsl": {
+      "DOTFILES": { "value": "/mnt/d/Dotfiles", "desc": "Dotfiles 根目录" },
+      "XDG_CONFIG_HOME": { "value": "$DOTFILES/Systems/wsl", "desc": "XDG 配置路径" },
+      "XDG_DATA_HOME": { "value": "/mnt/d/Data/XDG", "desc": "XDG 用户数据路径" },
+      "XDG_CACHE_HOME": { "value": "/mnt/d/Cache/XDG", "desc": "XDG 缓存路径" },
+      "GIT_CONFIG_GLOBAL": { "value": "$DOTFILES/Systems/wsl/git/.gitconfig", "desc": "Git 全局配置" },
+      "STARSHIP_CONFIG": { "value": "$DOTFILES/Systems/wsl/starship/starship.toml", "desc": "Starship 配置" },
+      "CARGO_HOME": { "value": "/mnt/d/Cache/Cargo", "desc": "Rust Cargo 缓存路径" },
+      "RUSTUP_HOME": { "value": "/mnt/d/Cache/Rustup", "desc": "Rustup 工具链路径" },
+      "GOPATH": { "value": "/mnt/d/Cache/Go", "desc": "Go 工作区路径" },
+      "OLLAMA_MODELS": { "value": "/mnt/d/Data/AI/Ollama", "desc": "Ollama 模型路径" },
+      "HF_HOME": { "value": "/mnt/d/Data/AI/HuggingFace", "desc": "HuggingFace 模型路径" }
+    }
+  },
+  "symlinks": {
+    "windows": [
+      { "source": "$HOME\\.wslconfig", "target": "D:\\Dotfiles\\Systems\\wsl\\.wslconfig", "desc": "WSL 配置" },
+      { "source": "$HOME\\.claude.json", "target": "D:\\Dotfiles\\Systems\\windows\\claude\\.claude.json", "desc": "Claude 配置" },
+      { "source": "$LOCALAPPDATA\\Packages\\Microsoft.WindowsTerminal_8wekyb3d8bbwe\\LocalState\\settings.json", "target": "D:\\Dotfiles\\Systems\\windows\\WindowsTerminal\\settings.json", "desc": "Windows Terminal 配置" },
+      { "source": "$HOME\\.ssh", "target": "D:\\Dotfiles\\Systems\\windows\\ssh", "type": "Junction", "desc": "OpenSSH 配置目录" }
+    ],
+    "wsl": [
+      { "source": "~/.zshrc", "target": "/mnt/d/Dotfiles/Systems/wsl/zsh/zshrc", "desc": "Zsh 配置" },
+      { "source": "~/.bashrc", "target": "/mnt/d/Dotfiles/Systems/wsl/bash/bashrc", "desc": "Bash 配置" }
+    ]
+  },
+  "tools": {
+    "windows": [
+      { "name": "git", "manager": "scoop", "desc": "Git 版本控制" },
+      { "name": "nodejs-lts", "manager": "scoop", "desc": "Node.js LTS" },
+      { "name": "python", "manager": "scoop", "desc": "Python" },
+      { "name": "starship", "manager": "scoop", "desc": "Starship 提示符" },
+      { "name": "fzf", "manager": "scoop", "desc": "模糊查找" },
+      { "name": "ripgrep", "manager": "scoop", "desc": "内容搜索" },
+      { "name": "gh", "manager": "scoop", "desc": "GitHub CLI" },
+      { "name": "sudo", "manager": "scoop", "desc": "Sudo 命令" },
+      { "name": "7zip", "manager": "scoop", "desc": "压缩工具" },
+      { "name": "keepassxc", "manager": "scoop", "desc": "密码管理器" },
+      { "name": "vscode", "manager": "scoop", "desc": "VS Code 编辑器" },
+      { "name": "postman", "manager": "scoop", "desc": "API 测试工具" }
+    ],
+    "wsl": [
+      { "name": "zsh", "manager": "apt", "desc": "Zsh shell" },
+      { "name": "git", "manager": "apt", "desc": "Git 版本控制" },
+      { "name": "curl", "manager": "apt", "desc": "HTTP 客户端" },
+      { "name": "wget", "manager": "apt", "desc": "下载工具" },
+      { "name": "htop", "manager": "apt", "desc": "进程监控" },
+      { "name": "starship", "manager": "nix", "desc": "Starship 提示符" },
+      { "name": "fzf", "manager": "nix", "desc": "模糊查找" }
+    ]
+  },
+  "templates": {
+    "windows": [
+      { "source": "Systems/windows/git/.gitconfig", "desc": "Git 配置" },
+      { "source": "Systems/windows/npm/.npmrc", "desc": "NPM 配置" },
+      { "source": "Systems/windows/pip/pip.ini", "desc": "Pip 配置" },
+      { "source": "Systems/windows/starship/starship.toml", "desc": "Starship 配置" },
+      { "source": "Systems/windows/PowerShell/profile_allhosts.ps1", "desc": "PowerShell AllHosts 配置" },
+      { "source": "Systems/windows/PowerShell/profile_currenthost.ps1", "desc": "PowerShell CurrentHost 配置" },
+      { "source": "Systems/windows/gh/config.yml", "desc": "GitHub CLI 配置" },
+      { "source": "Systems/windows/WindowsTerminal/settings.json", "desc": "Windows Terminal 配置" },
+      { "source": "Systems/windows/claude/.claude.json", "desc": "Claude 配置" },
+      { "source": "Systems/windows/ssh/config", "desc": "SSH 配置" },
+      { "source": "Systems/windows/scoop/config.json", "desc": "Scoop 配置" }
+    ],
+    "wsl": [
+      { "source": "Systems/wsl/.wslconfig", "desc": "WSL 配置" },
+      { "source": "Systems/wsl/bash/bashrc", "desc": "Bash 配置" },
+      { "source": "Systems/wsl/git/.gitconfig", "desc": "Git 配置" },
+      { "source": "Systems/wsl/nix/flake.nix", "desc": "Nix 配置" },
+      { "source": "Systems/wsl/starship/starship.toml", "desc": "Starship 配置" },
+      { "source": "Systems/wsl/zsh/zshrc", "desc": "Zsh 配置" },
+      { "source": "Systems/wsl/ssh/config", "desc": "SSH 配置" }
+    ]
+  }
+}

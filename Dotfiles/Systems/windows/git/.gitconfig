@@ -1,0 +1,22 @@
+# 将此文件作为全局 git config
+[filter "lfs"]
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+[user]
+	name = Zev
+	email = zevsolx@gmail.com
+[core]
+	editor = code --wait
+	autocrlf = true
+[init]
+	defaultBranch = main
+[color]
+	ui = auto
+[credential "helperselector"]
+	selected = manager
+[pull]
+	rebase = false
+[credential]
+	helper = 
