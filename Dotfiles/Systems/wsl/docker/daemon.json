@@ -1,0 +1,10 @@
+{
+  "registry-mirrors": [
+    "https://docker.1ms.run",
+    "https://docker.xuanyuan.me"
+  ],
+  "log-opts": {
+    "max-size": "10m",
+    "max-file": "3"
+  }
+}

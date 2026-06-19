@@ -1,7 +1,10 @@
 # ===== zsh 补全系统 =====
 
+# 补全文件目录（docker 等第三方补全放这里）
+fpath=(~/.zsh/completions $fpath)
+
 autoload -Uz compinit
-compinit
+compinit -u
 
 # 补全样式
 zstyle ':completion:*' auto-description 'specify: %d'

@@ -16,6 +16,6 @@ source /mnt/d/Dotfiles/Bootstrap/shared/env.sh
 # =========================================================
 # NIX (CRITICAL - MUST BE LAST)
 # =========================================================
-if [ -f /etc/profile.d/nix-daemon.sh ]; then
-  . /etc/profile.d/nix-daemon.sh
+if [ -f /etc/profile.d/nix.sh ]; then
+  . /etc/profile.d/nix.sh
 fi

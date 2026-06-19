@@ -1,22 +1,13 @@
 # ==============================================================================
-# Zev Zsh Configuration (模块化)
-# 入口文件 - 按顺序 source 各模块
+# Zev Zsh Configuration (WSL)
+# 入口文件 - 委托给 Bootstrap/bootstrap.zsh
 # ==============================================================================
 
 DOTFILES="/mnt/d/Dotfiles"
 
-# ===== 通用环境变量（bash/zsh 共享）=====
-source "$DOTFILES/Bootstrap/modules/env.sh"
-
-# ===== zsh 专用模块 =====
-source "$DOTFILES/Bootstrap/modules/zsh/env.zsh"       # zsh 特有环境
-source "$DOTFILES/Bootstrap/modules/zsh/alias.zsh"     # alias 定义
-source "$DOTFILES/Bootstrap/modules/zsh/history.zsh"   # history 配置
-source "$DOTFILES/Bootstrap/modules/zsh/completion.zsh" # 补全系统
-source "$DOTFILES/Bootstrap/modules/zsh/proxy.zsh"     # 代理函数
-source "$DOTFILES/Bootstrap/modules/zsh/tools.zsh"     # 工具函数
-source "$DOTFILES/Bootstrap/modules/zsh/nix.zsh"       # nix 检测
-source "$DOTFILES/Bootstrap/modules/zsh/starship.zsh"  # starship prompt
+# ===== 加载 Bootstrap =====
+source "$DOTFILES/Bootstrap/bootstrap.zsh"
 
 # ===== 快捷键 =====
 bindkey -e  # emacs 模式
+fpath=(~/.nix-profile/share/zsh/site-functions $fpath)

@@ -35,3 +35,8 @@ ffe() {
 fif() {
     rg --column --line-number --no-heading --color=always "$1" "${2:-.}" | fzf
 }
+
+# ===== zoxide（智能 cd）=====
+if command -v zoxide >/dev/null 2>&1; then
+    eval "$(zoxide init zsh)"
+fi

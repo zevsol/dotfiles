@@ -1,18 +1,13 @@
-#!/usr/bin/env zsh
-
 # =========================
 # DOTFILES BOOTSTRAP (ZSH)
 # =========================
+# 被 ~/.zshrc source，DOTFILES 变量由调用方设置
 
-DOTFILES="/mnt/d/Dotfiles"
-
-export DOTFILES
-
-# ===== 共享环境层 =====
-source "$DOTFILES/Bootstrap/shared/env.sh"
+# ===== 共享工具层 =====
 source "$DOTFILES/Bootstrap/shared/tools.sh"
 
 # ===== zsh 专用模块 =====
+# env.zsh 内部会 source shared/env.sh 并加载 nix daemon
 source "$DOTFILES/Bootstrap/zsh/env.zsh"
 source "$DOTFILES/Bootstrap/zsh/alias.zsh"
 source "$DOTFILES/Bootstrap/zsh/history.zsh"
