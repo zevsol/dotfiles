@@ -44,9 +44,9 @@ function dotfiles {
 # 代理函数
 # ============================================
 function eproxy {
-    $env:http_proxy = "http://127.0.0.1:10808"
-    $env:https_proxy = "http://127.0.0.1:10808"
-    $env:all_proxy = "socks5://127.0.0.1:10808"
+    $env:http_proxy = "http://127.0.0.1:7897"
+    $env:https_proxy = "http://127.0.0.1:7897"
+    $env:all_proxy = "socks5://127.0.0.1:7897"
     Write-Host "✓ 代理已开启" -ForegroundColor Green
 }
 
@@ -79,8 +79,8 @@ function env {
         [string]$Key
     )
 
-    # 读取 .env 文件
-    $envFile = Join-Path "D:\Dotfiles\Config" ".env"
+    # 读取 .env 文件（位于 Systems/windows/.env）
+    $envFile = Join-Path (Split-Path $PSScriptRoot -Parent) ".env"
     $envData = @{}
 
     if (Test-Path $envFile) {
@@ -278,7 +278,7 @@ Usage:
 #>
 function ffe {
     param(
-        [Parameter(Mandatory=$true)]
+        [Parameter(Mandatory = $true)]
         [string]$FileName,
         [string]$TargetDir = "."
     )

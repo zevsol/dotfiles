@@ -26,3 +26,6 @@ export HF_HOME="/mnt/d/Data/AI/HuggingFace"
 
 # ===== starship (WSL) =====
 export STARSHIP_CONFIG="$DOTFILES/Systems/wsl/starship/starship.toml"
+
+
+export PATH="$HOME/.npm-global/bin:$PATH"

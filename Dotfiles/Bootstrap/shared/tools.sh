@@ -11,9 +11,9 @@ alias dot='git --git-dir=/mnt/d/.dotfiles-bare --work-tree=/mnt/d'
 # proxy（WSL版本）
 # =========================
 proxy_on() {
-    export http_proxy="http://127.0.0.1:10808"
-    export https_proxy="http://127.0.0.1:10808"
-    export all_proxy="socks5://127.0.0.1:10808"
+    export http_proxy="http://127.0.0.1:7897"
+    export https_proxy="http://127.0.0.1:7897"
+    export all_proxy="socks5://127.0.0.1:7897"
     echo "proxy ON"
 }
 
