@@ -68,7 +68,7 @@
       "NPM_CONFIG_USERCONFIG": { "value": "D:\\Dotfiles\\Systems\\windows\\npm\\.npmrc", "desc": "NPM 用户配置" },
       "PIP_CONFIG_FILE": { "value": "D:\\Dotfiles\\Systems\\windows\\pip\\pip.ini", "desc": "Pip 配置文件" },
       "STARSHIP_CONFIG": { "value": "D:\\Dotfiles\\Systems\\windows\\starship\\starship.toml", "desc": "Starship 配置" },
-      "GH_CONFIG_DIR": { "value": "D:\\Dotfiles\\Systems\\windows\\gh\\config.yml", "desc": "GitHub CLI 配置" },
+      "GH_CONFIG_DIR": { "value": "D:\\Dotfiles\\Systems\\windows\\gh", "desc": "GitHub CLI 配置目录" },
       "XDG_CONFIG_HOME": { "value": "D:\\Dotfiles\\Systems\\windows", "desc": "XDG 配置路径" }
     },
     "wsl": {
