@@ -20,3 +20,9 @@
 	rebase = false
 [credential]
 	helper = 
+[credential "https://github.com"]
+	helper = 
+	helper = !'D:\\Scoop\\apps\\gh\\current\\bin\\gh.exe' auth git-credential
+[credential "https://gist.github.com"]
+	helper = 
+	helper = !'D:\\Scoop\\apps\\gh\\current\\bin\\gh.exe' auth git-credential

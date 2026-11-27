@@ -37,6 +37,9 @@
 **/*.cer
 **/ssh/
 
+# GitHub CLI 登录凭据
+**/gh/hosts.yml
+
 # 业务开发环境变量本地文件
 **/.env
 **/.env.local
@@ -100,15 +103,24 @@
 **/claude/.claude/cache/
 **/claude/.claude/history.jsonl
 
+# === 其他 AI CLI 运行时配置 (WSL) ===
+/Dotfiles/Systems/wsl/codex/
+/Dotfiles/Systems/wsl/copilot/
+/Dotfiles/Systems/wsl/gemini/
+
 # 操作系统特有噪音
 Thumbs.db
 ehthumbs.db
 Desktop.ini
 .DS_Store
 
+# 非配置目录与工具运行时噪音
+/Media/
 /Workspace/
 /Dotfiles - Copy/
+/Dotfiles/Config/
 /Dotfiles/.claude/
 /Dotfiles/.state/
-/Dotfiles/.claude/
 /Dotfiles/CLAUDE.md
+**/chromium/
+**/astro/

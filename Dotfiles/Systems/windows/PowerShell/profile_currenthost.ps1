@@ -140,43 +140,40 @@ if (-not (Test-Path $ChromeProfileRoot)) {
     New-Item -Path $ChromeProfileRoot -ItemType Directory -Force | Out-Null
 }
 
-# 1. 工作专用（Work）
-function Chrome-Work {
-    $profileDir = Join-Path $ChromeProfileRoot "Dev_Main"
+
+# Helper function to launch an isolated Chrome instance
+function Start-ChromeInstance {
+    param(
+        [Parameter(Mandatory)]
+        [string]$InstanceName,
+        [string]$Label = $InstanceName
+    )
+
+    $profileDir = Join-Path $ChromeProfileRoot $InstanceName
     if (-not (Test-Path $profileDir)) {
-        Write-Host "📁 首次启动，创建 Work 配置文件目录" -ForegroundColor Yellow
+        Write-Host "📁 首次启动，创建 $Label 配置文件目录" -ForegroundColor Yellow
     }
+
     & "C:\Program Files\Google\Chrome\Application\chrome.exe" `
         --user-data-dir="$profileDir" `
-        --lang=en-US
+        --lang=en-US `
+        --variations-override-country=us
 }
+
+# 1. 工作专用（Work）
+function Chrome-Work { Start-ChromeInstance -InstanceName "Dev_Main" -Label "Work" }
 
 # 2. 测试专用（Test）
-function Chrome-Test {
-    $profileDir = Join-Path $ChromeProfileRoot "Dev_Test"
-    if (-not (Test-Path $profileDir)) {
-        Write-Host "📁 首次启动，创建 Test 配置文件目录" -ForegroundColor Yellow
-    }
-    & "C:\Program Files\Google\Chrome\Application\chrome.exe" `
-        --user-data-dir="$profileDir" `
-        --lang=en-US
-}
+function Chrome-Test { Start-ChromeInstance -InstanceName "Dev_Test" -Label "Test" }
 
-# 3. 开发者专用（Sandbox）- 可选，预留
-function Chrome-Sandbox {
-    $profileDir = Join-Path $ChromeProfileRoot "Sandbox"
-    if (-not (Test-Path $profileDir)) {
-        Write-Host "📁 首次启动，创建 Dev 配置文件目录" -ForegroundColor Yellow
-    }
-    & "C:\Program Files\Google\Chrome\Application\chrome.exe" `
-        --user-data-dir="$profileDir" `
-        --lang=en-US
-}
+# 3. 开发者专用（Sandbox）
+function Chrome-Sandbox { Start-ChromeInstance -InstanceName "Sandbox" -Label "Dev" }
 
 # 别名
 Set-Alias ggc Chrome-Work
 Set-Alias ggct Chrome-Test
 Set-Alias ggcd Chrome-Sandbox
+
 
 # ============================================
 # 可选：Chrome 配置文件管理工具
